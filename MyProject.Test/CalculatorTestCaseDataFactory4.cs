@@ -2,14 +2,10 @@
 using System.Collections;
 using NUnit.Framework;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
-    public class CalculatorTestCaseData4
+    public class CalculatorTestCaseDataFactory4
     {
-        public int FirstNumber { get; private set; }
-        public int SecondNumber { get; private set; }
-        public int ExpectedResult { get; private set; }
-
         public IEnumerable GetTestCases
         {
             get
@@ -22,9 +18,9 @@ namespace MyProject.Test
             }
         }
 
-        private CalculatorTestCaseData4 OneDividedByOne()
+        private CalculatorTestCaseData OneDividedByOne()
         {
-            return new CalculatorTestCaseData4
+            return new CalculatorTestCaseData
                 {
                     FirstNumber = 1,
                     SecondNumber = 1,
@@ -32,9 +28,9 @@ namespace MyProject.Test
                 };
         }
 
-        private CalculatorTestCaseData4 TwoDividedByOne()
+        private CalculatorTestCaseData TwoDividedByOne()
         {
-            return new CalculatorTestCaseData4
+            return new CalculatorTestCaseData
                 {
                     FirstNumber = 2,
                     SecondNumber = 1,
@@ -42,9 +38,9 @@ namespace MyProject.Test
                 };
         }
 
-        private CalculatorTestCaseData4 OneDividedByZero()
+        private CalculatorTestCaseData OneDividedByZero()
         {
-            return new CalculatorTestCaseData4
+            return new CalculatorTestCaseData
                 {
                     FirstNumber = 1,
                     SecondNumber = 0

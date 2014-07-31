@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
-using TestWithNUnitCP;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
     [TestFixture]
     public sealed class CalculatorTest4
@@ -14,8 +13,8 @@ namespace MyProject.Test
             _calculator = new Calculator();
         }
 
-        [TestCaseSource(typeof(CalculatorTestCaseData4), "GetTestCases")]
-        public void CalculatorTestMethod(CalculatorTestCaseData4 testCase)
+        [TestCaseSource(typeof(CalculatorTestCaseDataFactory4), "GetTestCases")]
+        public void CalculatorTestMethod(CalculatorTestCaseData testCase)
         {
             int result = _calculator.Divide(testCase.FirstNumber, testCase.SecondNumber);
             Assert.AreEqual(testCase.ExpectedResult, result);

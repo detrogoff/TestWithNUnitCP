@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using NUnit.Framework;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
     public sealed class TestCaseDataFactory<T>
     {

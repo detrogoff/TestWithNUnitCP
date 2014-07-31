@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
-using TestWithNUnitCP;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
     [TestFixture]
     public sealed class CalculatorTest3

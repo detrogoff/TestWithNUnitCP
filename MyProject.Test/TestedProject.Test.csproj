@@ -6,8 +6,8 @@
     <ProjectGuid>{E505C63D-B92A-488A-9E9D-F3B5F13D7A80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyProject.Test</RootNamespace>
-    <AssemblyName>MyProject.Test</AssemblyName>
+    <RootNamespace>TestedProject.Test</RootNamespace>
+    <AssemblyName>TestedProject.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,14 +56,18 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="CalculatorTestCaseData5.cs" />
-    <Compile Include="CalculatorTestCaseData4.cs" />
+    <Compile Include="CalculatorFactory.cs" />
+    <Compile Include="CalculatorTest6.cs" />
+    <Compile Include="CalculatorTestCaseData.cs" />
+    <Compile Include="CalculatorTestCaseDataFactory5.cs" />
+    <Compile Include="CalculatorTestCaseDataFactory4.cs" />
     <Compile Include="CalculatorTest5.cs" />
     <Compile Include="CalculatorTest1.cs" />
     <Compile Include="CalculatorTest2.cs" />
     <Compile Include="CalculatorTest3.cs" />
     <Compile Include="CalculatorTest3TestCaseDataFactory.cs" />
     <Compile Include="CalculatorTest4.cs" />
+    <Compile Include="CalculatorType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCaseDataFactory.cs" />
   </ItemGroup>

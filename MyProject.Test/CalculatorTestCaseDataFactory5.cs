@@ -2,15 +2,11 @@
 using System.Collections;
 using NUnit.Framework;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
-    public class CalculatorTestCaseData5
+    public class CalculatorTestCaseDataFactory5
     {
-        public int FirstNumber { get; private set; }
-        public int SecondNumber { get; private set; }
-        public int ExpectedResult { get; private set; }
-
-        private static readonly TestCaseDataFactory<CalculatorTestCaseData5> TestCaseDataFactory = new TestCaseDataFactory<CalculatorTestCaseData5>();
+        private static readonly TestCaseDataFactory<CalculatorTestCaseData> TestCaseDataFactory = new TestCaseDataFactory<CalculatorTestCaseData>();
 
         public IEnumerable GetTestCases
         {
@@ -24,7 +20,7 @@ namespace MyProject.Test
 
         private TestCaseData OneDividedByOne()
         {
-            var calculatorTCD = new CalculatorTestCaseData5
+            var calculatorTCD = new CalculatorTestCaseData
             {
                 FirstNumber = 1,
                 SecondNumber = 1,
@@ -35,7 +31,7 @@ namespace MyProject.Test
 
         private TestCaseData TwoDividedByOne()
         {
-            var calculatorTCD = new CalculatorTestCaseData5
+            var calculatorTCD = new CalculatorTestCaseData
             {
                 FirstNumber = 2,
                 SecondNumber = 1,
@@ -46,7 +42,7 @@ namespace MyProject.Test
 
         private TestCaseData OneDividedByZero()
         {
-            var calculatorTCD = new CalculatorTestCaseData5
+            var calculatorTCD = new CalculatorTestCaseData
             {
                 FirstNumber = 1,
                 SecondNumber = 0

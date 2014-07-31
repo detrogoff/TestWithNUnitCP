@@ -2,7 +2,7 @@
 using System.Collections;
 using NUnit.Framework;
 
-namespace MyProject.Test
+namespace TestedProject.Test
 {
     public class CalculatorTest3TestCaseDataFactory
     {
